@@ -37,7 +37,7 @@ img { max-width: 100%; }
 .site-footer { background: var(--ink); color: var(--white); }
 .site-footer__inner { padding-top: var(--space-7); padding-bottom: var(--space-6); display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; }
 .site-footer__brand { display: flex; flex-direction: column; gap: 18px; }
-.site-footer__tagline { max-width: 340px; color: var(--ink-muted); }
+.site-footer__tagline { max-width: 420px; color: var(--ink-muted); text-wrap: balance; }
 .site-footer__nav { display: flex; flex-wrap: wrap; gap: 12px 28px; font-size: 15px; align-content: flex-start; }
 .site-footer__nav a { color: var(--white); text-decoration: none; }
 .site-footer__nav a:hover { color: var(--lime); }
