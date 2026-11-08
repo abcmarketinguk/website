@@ -109,6 +109,7 @@ textarea.abc-field__input { resize: vertical; }
 .pp-h2 { margin: 0; font-size: 44px; font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; }
 .pp-short { padding-top: var(--space-8); padding-bottom: var(--space-8); display: flex; flex-direction: column; gap: 40px; }
 .pp-short__intro { display: flex; flex-direction: column; gap: 16px; }
+.pp-short__text { margin: 0; max-width: 720px; font-size: 18px; line-height: 1.7; color: var(--slate); }
 .pp-short__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-4); }
 .pp-short__cards .abc-card { padding: var(--space-5); gap: 12px; }
 .pp-short__cards p, .pp-services p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--slate); }
