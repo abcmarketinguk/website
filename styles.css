@@ -1,0 +1,16 @@
+/* abc marketing: shared styles */
+body { margin: 0; }
+a { color: #2F5BEA; }
+a:hover { color: #121826; }
+img { max-width: 100%; }
+
+/* Keep the lime highlight neat when a headline wraps */
+h1 span, h2 span { -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+/* Smaller screens: scale headings down so they fit on a phone */
+@media (max-width: 700px) {
+  h1 { font-size: 40px !important; }
+  h2 { font-size: 32px !important; }
+  section > div { padding-top: 64px !important; padding-bottom: 64px !important; }
+  header nav { gap: 16px !important; }
+}
