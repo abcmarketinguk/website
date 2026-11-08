@@ -7,6 +7,9 @@ img { max-width: 100%; }
 /* Keep the lime highlight neat when a headline wraps */
 h1 span, h2 span { -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
+/* Highlighter-pen stroke behind a key phrase */
+.highlight { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100' preserveAspectRatio='none'><path fill='%23C6F432' d='M9,30 C70,22 150,27 230,21 S350,18 393,24 L396,37 L393,51 L397,65 L391,80 C330,88 240,83 160,88 S50,93 11,89 L6,77 L9,64 L5,51 L9,39 Z'/><path fill='%23B5E21F' opacity='.45' d='M14,72 C90,66 200,70 300,66 S380,68 392,70 L390,80 C320,86 220,82 150,86 S60,90 12,86 Z'/></svg>") no-repeat center / 100% 100%; }
+
 /* Smaller screens: scale headings down so they fit on a phone */
 @media (max-width: 700px) {
   h1 { font-size: 40px !important; }
