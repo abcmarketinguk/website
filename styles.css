@@ -11,6 +11,8 @@ h1 span, h2 span { -webkit-box-decoration-break: clone; box-decoration-break: cl
 @media (max-width: 700px) {
   h1 { font-size: 40px !important; }
   h2 { font-size: 32px !important; }
+  /* Homepage headline: shrink just enough to keep the highlighted phrase on one line */
+  #hero-title { font-size: min(40px, calc((100vw - 72px) / 8.6)) !important; }
   section > div { padding-top: 64px !important; padding-bottom: 64px !important; }
   header nav { gap: 16px !important; }
 }
