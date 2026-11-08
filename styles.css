@@ -101,6 +101,13 @@ textarea.abc-field__input { resize: vertical; }
 .abc-logo--on-dark, .abc-logo--on-dark:hover { color: var(--white); }
 
 /* Section backgrounds */
+/* Legal pages */
+.legal-hero { padding-top: clamp(48px, 8vh, 88px); padding-bottom: clamp(40px, 6vh, 64px); display: flex; flex-direction: column; gap: 18px; }
+.legal-page { max-width: 760px; padding-top: var(--space-7); padding-bottom: var(--space-8); display: flex; flex-direction: column; gap: 18px; }
+.legal-page .heading-2 { margin-top: 24px; }
+.legal-page .heading-2:first-child { margin-top: 0; }
+.legal-list { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+.contact-form__note { margin: 0; font-size: 14px; line-height: 1.5; color: var(--slate); }
 .abc-bg-dots { background-color: var(--sand); background-image: radial-gradient(#d9d4ca 1.6px, transparent 1.6px); background-size: 28px 28px; }
 .abc-bg-grid { background-color: var(--white); background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 28px 28px; }
 .abc-bg-blueprint { background-color: var(--cobalt); color: var(--white); background-image: linear-gradient(rgba(255,255,255,0.16) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.16) 1px, transparent 1px); background-size: 28px 28px; }
