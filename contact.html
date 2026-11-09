@@ -31,11 +31,16 @@
 <h1 class="hero">How can I help?</h1>
 <p class="lead">Share a few details about your team and what you're looking for, and I'll reply within one working day.</p>
 </div>
-<form class="contact-form" action="#" method="post">
-<div class="contact-form__row"><div class="abc-field"><label class="abc-field__label" for="firstname">First name</label><input class="abc-field__input" id="firstname" type="text" autocomplete="given-name"></div><div class="abc-field"><label class="abc-field__label" for="lastname">Last name</label><input class="abc-field__input" id="lastname" type="text" autocomplete="family-name"></div></div>
-<div class="contact-form__row"><div class="abc-field"><label class="abc-field__label" for="jobtitle">Job title</label><input class="abc-field__input" id="jobtitle" type="text" autocomplete="organization-title"></div><div class="abc-field"><label class="abc-field__label" for="company">Company</label><input class="abc-field__input" id="company" type="text" autocomplete="organization"></div></div>
-<div class="contact-form__row"><div class="abc-field"><label class="abc-field__label" for="email">Email</label><input class="abc-field__input" id="email" type="email" autocomplete="email"></div><div class="abc-field"><label class="abc-field__label" for="phone">Phone number</label><input class="abc-field__input" id="phone" type="tel" autocomplete="tel"></div></div>
-<div class="abc-field"><label class="abc-field__label" for="message">What would you like help with?</label><textarea class="abc-field__input" id="message" rows="5"></textarea></div>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="277fdb9b-6bbb-45f5-a9cc-39c8363fb905">
+<input type="hidden" name="subject" value="New enquiry from abcmarketing.uk">
+<input type="hidden" name="from_name" value="abc marketing website">
+<input type="hidden" name="redirect" value="https://abcmarketing.uk/thanks">
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+<div class="contact-form__row"><div class="abc-field"><label class="abc-field__label" for="firstname">First name</label><input class="abc-field__input" id="firstname" name="First name" required type="text" autocomplete="given-name"></div><div class="abc-field"><label class="abc-field__label" for="lastname">Last name</label><input class="abc-field__input" id="lastname" name="Last name" type="text" autocomplete="family-name"></div></div>
+<div class="contact-form__row"><div class="abc-field"><label class="abc-field__label" for="jobtitle">Job title</label><input class="abc-field__input" id="jobtitle" name="Job title" type="text" autocomplete="organization-title"></div><div class="abc-field"><label class="abc-field__label" for="company">Company</label><input class="abc-field__input" id="company" name="Company" type="text" autocomplete="organization"></div></div>
+<div class="contact-form__row"><div class="abc-field"><label class="abc-field__label" for="email">Email</label><input class="abc-field__input" id="email" name="email" required type="email" autocomplete="email"></div><div class="abc-field"><label class="abc-field__label" for="phone">Phone number</label><input class="abc-field__input" id="phone" name="Phone" type="tel" autocomplete="tel"></div></div>
+<div class="abc-field"><label class="abc-field__label" for="message">What would you like help with?</label><textarea class="abc-field__input" id="message" name="message" rows="5" required></textarea></div>
 <p class="contact-form__note">I'll only use these details to reply to you. See my <a href="/privacy">privacy policy</a>.</p>
 <button class="abc-btn abc-btn--primary" type="submit">Submit</button>
 </form>
