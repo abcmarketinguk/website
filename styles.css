@@ -34,6 +34,8 @@ img { max-width: 100%; }
 .site-header { border-bottom: 1px solid var(--line); background: var(--white); }
 .site-header__inner { padding-top: 20px; padding-bottom: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; }
+.site-nav__link { color: var(--ink); font-weight: 600; font-size: 15px; text-decoration: none; }
+.site-nav__link:hover, .site-nav__link[aria-current="page"] { color: var(--cobalt); }
 .site-footer { background: var(--ink); color: var(--white); }
 .site-footer__inner { padding-top: var(--space-7); padding-bottom: var(--space-6); display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; }
 .site-footer__brand { display: flex; flex-direction: column; gap: 18px; }
