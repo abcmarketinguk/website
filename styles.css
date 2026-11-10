@@ -51,6 +51,10 @@ img { max-width: 100%; }
 .home-hero .lead { max-width: 640px; }
 .home-hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 6px; }
 
+/* About page: keep paragraphs to a readable line length (about 65 characters) */
+.about-copy .lead { max-width: 600px; }
+.about-copy .body { max-width: 560px; }
+
 /* Contact page */
 .contact-hero { padding-top: clamp(48px, 8vh, 88px); padding-bottom: clamp(56px, 9vh, 96px); display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; justify-content: space-between; }
 .contact-hero__intro { flex: 1 1 420px; max-width: 520px; display: flex; flex-direction: column; gap: 22px; }
