@@ -31,7 +31,7 @@
 <h1 class="hero">How can I help?</h1>
 <p class="lead">Share a few details about your team and what you're looking for, and I'll reply within one working day.</p>
 </div>
-<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 <input type="hidden" name="access_key" value="62e47b28-fde1-4e4d-8414-ddf102e7786a">
 <input type="hidden" name="subject" value="New enquiry from abcmarketing.uk">
 <input type="hidden" name="from_name" value="abc marketing website">
@@ -43,7 +43,32 @@
 <div class="abc-field"><label class="abc-field__label" for="message">What would you like help with?</label><textarea class="abc-field__input" id="message" name="message" rows="5" required></textarea></div>
 <p class="contact-form__note">I'll only use these details to reply to you. See my <a href="/privacy">privacy policy</a>.</p>
 <button class="abc-btn abc-btn--primary" type="submit">Submit</button>
+<p class="contact-form__note" id="form-error" role="alert" hidden>Sorry, something went wrong sending your message. Please try again or email me at <a href="mailto:hello@abcmarketing.uk">hello@abcmarketing.uk</a>.</p>
 </form>
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  var error = document.getElementById('form-error');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    error.hidden = true;
+    fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success) { window.location.href = '/thanks'; }
+        else { throw new Error(data.message || 'Submission failed'); }
+      })
+      .catch(function () {
+        error.hidden = false;
+        button.disabled = false;
+        button.textContent = 'Submit';
+      });
+  });
+})();
+</script>
 </div>
 </section>
 </main>
