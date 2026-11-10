@@ -55,8 +55,8 @@ img { max-width: 100%; }
 .home-hero .lead { max-width: 640px; }
 .home-hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 6px; }
 
-/* About page: keep paragraphs to a readable line length (about 65 characters) */
-.about-copy .lead { max-width: 600px; }
+/* About page: keep paragraphs to a readable line length (intro about 75 characters, body about 68) */
+.about-copy .lead { max-width: 680px; }
 .about-copy .body { max-width: 560px; }
 
 /* Contact page */
