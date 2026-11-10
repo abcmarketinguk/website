@@ -11,8 +11,11 @@
   --accent: var(--cobalt); --accent-on-dark: var(--lime); --border: var(--line);
   --space-1: 4px; --space-2: 8px; --space-3: 16px; --space-4: 24px; --space-5: 32px; --space-6: 48px; --space-7: 64px; --space-8: 96px;
   --radius-sm: 8px; --radius-field: 14px; --radius-card: 24px; --radius-pill: 999px;
+  --page-gutter: 24px;
   --font-sans: Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+
+@media (min-width: 768px) { :root { --page-gutter: 40px; } }
 
 /* Base */
 body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--white); }
@@ -30,7 +33,8 @@ img { max-width: 100%; }
 .small { margin: 0; font-size: 15px; line-height: 1.6; }
 
 /* Layout */
-.container { max-width: 1200px; margin: 0 auto; padding-left: var(--space-4); padding-right: var(--space-4); }
+/* Page gutter: 24px on phones, 40px from tablet up. Content column maxes out at 1120px. */
+.container { max-width: 1200px; margin: 0 auto; padding-left: var(--page-gutter); padding-right: var(--page-gutter); }
 .site-header { border-bottom: 1px solid var(--line); background: var(--white); }
 .site-header__inner { padding-top: 20px; padding-bottom: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; }
